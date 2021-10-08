@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const RetrieveData = require("./data");
+const RetrieveData = require("./utils/data");
 
 const TWO_DAYS_IN_SECONDS = 172800;
 
