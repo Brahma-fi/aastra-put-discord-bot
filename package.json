@@ -1,0 +1,30 @@
+{
+  "name": "aastra-put-discord-bot",
+  "version": "1.0.0",
+  "description": "a discord bot to track stats of Aastra-ETHPUT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brahma-fi/aastra-put-discord-bot.git"
+  },
+  "keywords": [
+    "discord-bot",
+    "aastra"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brahma-fi/aastra-put-discord-bot/issues"
+  },
+  "homepage": "https://github.com/Brahma-fi/aastra-put-discord-bot#readme",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.4.7"
+  }
+}
