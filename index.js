@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const RetrieveData = require("./utils/data");
 
 const TWO_DAYS_IN_SECONDS = 172800;
-
+const TWO_HOURS_IN_SECONDS = 7200;
 const getDataAndSetStatus = async () => {
   const { lowerTickPrice, timeToRebalance, upperTickPrice } =
     await RetrieveData();
@@ -21,7 +21,7 @@ client.on("ready", () => {
   getDataAndSetStatus();
   setInterval(async () => {
     await getDataAndSetStatus();
-  }, TWO_DAYS_IN_SECONDS);
+  }, TWO_HOURS_IN_SECONDS);
 });
 
 client.login(process.env.BOT_TOKEN);
